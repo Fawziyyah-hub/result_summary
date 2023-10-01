@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+   --Light-red: hsl(0, 100%, 67%);
+   --Orangey-yellow: hsl(39, 100%, 56%);
+   --Green-teal: hsl(166, 100%, 37%);
+   --Cobalt-blue: hsl(234, 85%, 45%);
+   /**Gradients**/
+   --Light-slate-blue: hsl(252, 100%, 67%);/**Background**/
+   --Light-royal-blue: hsl(241, 81%, 54%);/**Background**/
+   --Violet-blue : hsla(256, 72%, 46%, 1);/**circle**/
+   --Persian-blue: hsla(241, 72%, 46%, 0);/**circle**/
+   /**Neutral**/
+   --White: hsl(0, 0%, 100%);
+   --Pale-blue: hsl(221, 100%, 96%);
+   --Light-lavender: hsl(241, 100%, 89%);
+   --Dark-gray-blue: hsl(224, 30%, 27%);
+   
+}
+body{
+    font-family: "Hanken Grotesk" sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+main{
+    width: 375px;
+    justify-content: center;
+    align-items: center;
+    background: var(--White);
+}
+.container{
+    background-color: hsl(241, 81%, 54%) ;
+    text-align: center;
+    color: white;
+    height: 50vh;
+    padding: 20px 10px;
+    border-radius: 0 0 40px 40px;
+}
+h1{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--Light-lavender);
+}
+.circle{
+    box-sizing: border-box;
+    background-color: var(--Cobalt-blue);
+    border-radius: 100px;
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 100px;
+    box-shadow: 0 0 0 7px var(--Cobalt-blue);
+    margin-top: 30px;
+}
+.circle span{
+    font-size: 52px;
+    font-weight: 600;
+    position: inherit;
+    top: 20px;
+}
+.circle p{
+    margin-top: 40px;
+    color: var(--Light-lavender);
+}
+.comment{
+    width: 70%;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+h2{
+    font-weight: 500;
+    text-align: center;
+}
+.comment p{
+    margin-left: 20px;
+    color: var(--Light-lavender);
+}
+.scores{
+    margin: 20px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    display: grid;
+    font-size: 15px;
+    font-weight: 700;
+}
+h3{
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+    font-size: 19px;
+}
+.pink{
+    color: var(--Light-red);
+    background-color: rgba(255, 192, 203, 0.384);
+    display: flex;
+    width: 310px;
+    border-radius: 10px;
+}
+.yellow{
+    color: var(--Orangey-yellow);
+    margin-top: 10px;
+    display: flex;
+    background-color: rgba(255, 166, 0, 0.185);
+    border-radius: 10px;
+}
+.mint{
+    color: var(--Green-teal);
+    display: flex;
+    background: rgba(102, 247, 102, 0.123); 
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.blue{
+    color: var(--Violet-blue);
+    background: rgba(0, 0, 255, 0.116);
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+}
+.mint img{
+    margin-left: 20px;
+}
+.mint p{
+    margin-left: 15px;
+}
+.mint .three{
+    position: relative;
+    left: 135px;
+    color: var(--Dark-gray-blue);
+}
+.yellow img{
+    margin-left: 20px;
+}
+.yellow p{
+    margin-left: 15px;
+}
+.yellow .two{
+    position: relative;
+    left: 123px;
+    color: var(--Dark-gray-blue);
+}
+.pink img{
+    margin-left: 20px;
+}
+.pink p{
+    margin-left: 15px;
+}
+.pink .one{
+    position: relative;
+    left: 120px;
+    color: var(--Dark-gray-blue);
+}
+.blue img{
+    margin-left: 20px;
+}
+.blue p{
+    margin-left: 15px;
+}
+.blue .four{
+    position: relative;
+    left: 139px;
+    color: var(--Dark-gray-blue);
+}
+.pink span{
+    color: rgba(128, 128, 128, 0.726);
+    margin-left: 125px;
+    position: relative;
+    top: 14px;  
+}
+.yellow span{
+    color: rgba(128, 128, 128, 0.726);
+    margin-left: 130px;
+    position: relative;
+    top: 14px;   
+}
+.mint span{
+    color: rgba(128, 128, 128, 0.726);
+    margin-left: 140px;
+    position: relative;
+    top: 14px;   
+}
+.blue span{
+    color: rgba(128, 128, 128, 0.726);
+    margin-left: 145px;
+    position: relative;
+    top: 14px;   
+}
+button{
+    width: 70%;
+    height: 50px;
+    margin-left: 50px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: none;
+}
+button:hover{
+    background-color: blue;
+}
+@media screen and (max-width: 768px){ 
+   .container{
+    width: 45%;
+   } 
+}
+@media screen and (max-width: 480px){
+   .container{
+    width: 100%;
+   } 
+}
+
